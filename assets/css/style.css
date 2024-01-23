@@ -51,9 +51,10 @@ body {
 }
 
 .col-1 {
-    width: calc((100% / 7) *1);
+    width: calc( (100% / 7) * 1);
     
     
-    background-color: red;
+    
+    padding: 1rem;
 }
 
