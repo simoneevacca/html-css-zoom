@@ -8,10 +8,13 @@
 body {
     background-color: black;
 }
+
+img {
+    height: 15vh;
+}
 /* color palette */
 
 
-/* #region header */
 :root{
     --main-color: rgb(34, 34, 34);
     --light-color: rgb(74, 74, 74);
@@ -20,6 +23,7 @@ body {
     --red-color: rgb(156, 47, 50);
 }
 
+/* #region header */
 .container {
     display: flex;
     justify-content: flex-end;
@@ -30,14 +34,14 @@ body {
     display: flex;
     align-items: center;
     gap: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--light-color);
     padding: 0.3rem;
     border-radius: 10px;
 }
 
 .full_screen {
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--light-color);
     padding: 0.3rem;
     border-radius: 10px;
@@ -51,10 +55,24 @@ body {
 }
 
 .col-1 {
-    width: calc( (100% / 7) * 1);
-    
-    
-    
-    padding: 1rem;
+    width: calc(100% / 7);
+    padding: 0.3rem;
 }
 
+.user {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 0.3rem;
+    background-color: rgba(74, 74, 74, 0.6);
+    padding: 0.3rem;
+}
+
+.users {
+    padding: 2rem 5rem 2rem 5rem;
+
+}
