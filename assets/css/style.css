@@ -11,6 +11,24 @@ body {
     
 }
 
+/* color palette */
+
+
+:root{
+    --main-color: rgb(34, 34, 34);
+    --light-color: rgb(74, 74, 74);
+    --white-color: rgb(254, 255, 255);
+    --green-color: rgb(79, 200, 1);
+    --red-color: rgb(251, 44, 44);
+}
+
+/* #region utilities */
+
+.col-1 {
+    width: calc(100% / 7);
+    padding: 0.3rem;
+}
+
 img {
     height: 15vh;
 }
@@ -25,23 +43,25 @@ img {
     align-items: center;
     gap: 0.5rem
 }
-/* color palette */
 
-
-:root{
-    --main-color: rgb(34, 34, 34);
-    --light-color: rgb(74, 74, 74);
-    --white-color: rgb(254, 255, 255);
-    --green-color: rgb(79, 200, 1);
-    --red-color: rgb(255, 73, 73);
+.fa-angle-up {
+    font-size: 1rem;
+    align-self: center;
 }
+
+.fa-share-from-square {
+    color: var(--green-color);
+}
+
+/* #endregion utilities */
+
 
 /* #region header */
 .container {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    margin: 0.5rem 1rem 0 0;
+    margin: 0.3rem 1rem 0 0;
 }
 .view {
     display: flex;
@@ -60,22 +80,17 @@ img {
     border-radius: 10px;
 
 }
+/* #endregion header */
+
 
 /* #region main */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-
-.col-1 {
-    width: calc(100% / 7);
-    padding: 0.3rem;
-}
-
 .user {
     position: relative;
 }
-
 .name {
     position: absolute;
     bottom: 0;
@@ -84,52 +99,45 @@ img {
     background-color: rgba(74, 74, 74, 0.6);
     padding: 0.3rem;
 }
-
 .users {
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem 1rem 5rem;
 
 }
 
-/* #region nav */
+/* #endregion main */
+
+
+/* #region footer */
 footer {
-    /* height: 100px; */
     background-color: var(--main-color);
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0rem 1rem 1rem;
 }
-
 .input {
     font-size: 2rem;
     display: flex;
     gap: 1rem;
-}
+    padding: 1rem 0 1rem 1rem;
 
+}
 .utility {
     display: flex;
     gap: 1rem;
     font-size: 2rem;
-    padding-left: 4rem;
-
+    padding: 1rem 0 1rem 0;
 }
-
 .end{
 display: flex;
 align-items: center;
 color: var(--red-color);
 background-color: var(--light-color);
-/* height: 100%; */
-padding: 0 2rem 0 2rem;
+padding: 1rem 2rem 1rem 2rem;
+align-self: stretch;
+}
+.sss {
+    height: 100%;
 }
 
-
-.fa-angle-up {
-    font-size: 1rem;
-    align-self: center;
-}
-
-.fa-share-from-square {
-    color: var(--green-color);
-}
+/* #endregion footer */
